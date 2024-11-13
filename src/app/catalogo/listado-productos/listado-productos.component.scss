@@ -1,0 +1,19 @@
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px; 
+  gap: 16px;
+}
+
+.producto-card {
+  width: 300px; 
+}
+
+.boton{
+  display: flex;
+  justify-content: right;
+  padding: 20px;
+}
+
+  
