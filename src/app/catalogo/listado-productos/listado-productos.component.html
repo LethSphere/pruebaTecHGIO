@@ -1,0 +1,17 @@
+<div class="productos-container">
+  <mat-card class="producto-card" *ngFor="let producto of productos()" [routerLink]="['/detalles', producto.id]">
+    <mat-card-title>{{ producto.nombre }}</mat-card-title>
+    <mat-card-content>
+      <p>Precio: {{ producto.precio | precio }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary">Ver más</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
+<div>
+  <mat-card-actions class="boton">
+    <button mat-raised-button color="primary" (click)="agregarProducto()">Agregar</button>
+  </mat-card-actions>
+</div>
